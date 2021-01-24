@@ -11,6 +11,10 @@ brew install node
 brew install python@3.7
 brew install docker
 brew install docker-compose
+brew install koekeishiya/formulae/skhd
+
+# activate brew services
+brew services start skhd
 
 # install cask software
 brew install --cask google-chrome
@@ -25,3 +29,7 @@ brew install --cask insomnia
 brew install --cask cyberduck
 brew install --cask keepingyouawake
 brew install --cask spotify
+
+# install node modules
+npm i -g nodemon
+npm i -g markdown-pdf
