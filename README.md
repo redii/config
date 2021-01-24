@@ -4,7 +4,15 @@ Just a repository in which I can store all configuration files for my personal c
 
 ## macOS
 
+### Configuration Files
+
+- .zshrc
+- .hyper.js
+- .skhdrc
+
 ### Software
+
+#### Brew
 - Zsh + starship
 - Git
 - Nodejs + npm
@@ -12,6 +20,7 @@ Just a repository in which I can store all configuration files for my personal c
 - Docker
 - Docker Compose
 
+#### Brew Cask
 - Google Chrome
 - Firefox
 - Brackets
@@ -24,3 +33,7 @@ Just a repository in which I can store all configuration files for my personal c
 - Cyberduck
 - Spotify
 - KeepingYouAwake
+
+#### Node Modules
+- nodemon
+- markdown-pdf
