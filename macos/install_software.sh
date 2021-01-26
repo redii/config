@@ -17,6 +17,7 @@ brew install koekeishiya/formulae/skhd
 brew services start skhd
 
 # install cask software
+brew install --cask alfred
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask brackets
