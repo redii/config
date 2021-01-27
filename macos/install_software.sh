@@ -9,6 +9,7 @@ brew install starship
 brew install git
 brew install node
 brew install python@3.7
+brew install rust
 brew install docker
 brew install docker-compose
 brew install koekeishiya/formulae/skhd
