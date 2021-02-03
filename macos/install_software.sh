@@ -8,6 +8,7 @@ brew install zsh
 brew install starship
 brew install git
 brew install node
+brew install deno
 brew install python@3.7
 brew install rust
 brew install docker
@@ -31,6 +32,10 @@ brew install --cask insomnia
 brew install --cask cyberduck
 brew install --cask keepingyouawake
 brew install --cask spotify
+
+# install cask fonts
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 
 # install node modules
 npm i -g nodemon

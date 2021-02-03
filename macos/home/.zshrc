@@ -4,7 +4,8 @@ autoload -Uz compinit
 compinit
 
 # define aliases
-alias ll="ls -l"
+alias ll="ls -lG"
+alias la="ls -laG"
 
 # activate starship for zsh
 eval "$(starship init zsh)"
