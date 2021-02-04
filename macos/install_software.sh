@@ -36,6 +36,7 @@ brew install --cask spotify
 # install cask fonts
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
+brew install --cask font-jetbrains-mono
 
 # install node modules
 npm i -g nodemon

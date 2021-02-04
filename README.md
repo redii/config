@@ -16,11 +16,14 @@ Just a repository in which I can store all configuration files for my personal c
 - Zsh + starship
 - Git
 - Nodejs + npm
+- deno
 - Python3 + pip
+- rust
 - Docker
 - Docker Compose
+- skhd
 
-#### Brew Cask
+#### Brew Cask Software
 - Google Chrome
 - Firefox
 - Brackets
@@ -33,6 +36,10 @@ Just a repository in which I can store all configuration files for my personal c
 - Cyberduck
 - Spotify
 - KeepingYouAwake
+
+#### Brew Cask Fonts
+- font-fira-code
+- font-jetbrains-mono
 
 #### Node Modules
 - nodemon
