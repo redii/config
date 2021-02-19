@@ -39,5 +39,6 @@ brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
 # install node modules
+npm i -g npx
 npm i -g nodemon
 npm i -g markdown-pdf
