@@ -42,5 +42,6 @@ Just a repository in which I can store all configuration files for my personal c
 - font-jetbrains-mono
 
 #### Node Modules
+- npx
 - nodemon
 - markdown-pdf
