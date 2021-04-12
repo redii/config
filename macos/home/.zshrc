@@ -7,7 +7,11 @@ compinit
 alias ll="ls -lG"
 alias la="ls -laG"
 
-# activate starship for zsh
-eval "$(starship init zsh)"
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/bitcomplete bit
+# enable pure prompt
+autoload -U promptinit; promptinit
+# change the color for `prompt:success` and `prompt:error`
+zstyle ':prompt:pure:prompt:success' color cyan
+zstyle ':prompt:pure:prompt:error' color red
+# turn on git stash status
+zstyle :prompt:pure:git:stash show yes
+prompt pure
