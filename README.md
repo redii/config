@@ -22,6 +22,7 @@ Just a repository in which I can store all configuration files for my personal c
 - Docker
 - Docker Compose
 - skhd
+- zip
 
 #### Brew Cask Software
 - Google Chrome
@@ -36,12 +37,18 @@ Just a repository in which I can store all configuration files for my personal c
 - Cyberduck
 - Spotify
 - KeepingYouAwake
+- UTM
+- BitWarden
 
 #### Brew Cask Fonts
 - font-fira-code
 - font-jetbrains-mono
 
 #### Node Modules
+- pure-prompt
 - npx
 - nodemon
 - markdown-pdf
+- eslint
+- http-server
+- caprover

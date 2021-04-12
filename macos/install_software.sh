@@ -5,7 +5,6 @@
 
 # install additional software
 brew install zsh
-brew install starship
 brew install git
 brew install node
 brew install deno
@@ -14,6 +13,7 @@ brew install rust
 brew install docker
 brew install docker-compose
 brew install koekeishiya/formulae/skhd
+brew install zip
 
 # activate brew services
 brew services start skhd
@@ -32,6 +32,10 @@ brew install --cask insomnia
 brew install --cask cyberduck
 brew install --cask keepingyouawake
 brew install --cask spotify
+brew install --cask hiddenbar
+brew install --cask utm
+brew install --cask bitwarden
+brew install --cask tunnelblick
 
 # install cask fonts
 brew tap homebrew/cask-fonts
@@ -39,6 +43,10 @@ brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
 # install node modules
+npm i -g pure-prompt
 npm i -g npx
 npm i -g nodemon
 npm i -g markdown-pdf
+npm i -g eslint
+npm i -g http-server
+npm i -g caprover
