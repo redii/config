@@ -7,6 +7,9 @@ compinit
 alias ll="ls -lG"
 alias la="ls -laG"
 
+# git config
+git config --global core.excludesfile ~/.gitignore_global
+
 # enable pure prompt
 autoload -U promptinit; promptinit
 # change the color for `prompt:success` and `prompt:error`
