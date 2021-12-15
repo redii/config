@@ -36,6 +36,7 @@ brew install --cask hiddenbar
 brew install --cask utm
 brew install --cask bitwarden
 brew install --cask tunnelblick
+brew install --cask balenaetcher
 
 # install cask fonts
 brew tap homebrew/cask-fonts
