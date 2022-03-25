@@ -7,7 +7,7 @@
 brew install zsh
 brew install git
 brew install nvm
-brew install python@3.7
+brew install python@3.10
 brew install rust
 brew install docker
 brew install docker-compose
