@@ -33,7 +33,11 @@ brew install --cask hiddenbar
 brew install --cask utm
 brew install --cask bitwarden
 brew install --cask tunnelblick
+<<<<<<< HEAD
 brew install --cask postico
+=======
+brew install --cask balenaetcher
+>>>>>>> eecda8da19ca6267d90de9a539d409b4f5f10188
 
 # install cask fonts
 brew tap homebrew/cask-fonts
