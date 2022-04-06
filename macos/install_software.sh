@@ -13,6 +13,8 @@ brew install docker
 brew install docker-compose
 brew install koekeishiya/formulae/skhd
 brew install zip
+brew install grep
+brew install hugo
 
 # activate brew services
 brew services start skhd
@@ -23,6 +25,7 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask brackets
 brew install --cask visual-studio-code
+brew install --cask warp
 brew install --cask hyper
 brew install --cask google-drive
 brew install --cask docker
