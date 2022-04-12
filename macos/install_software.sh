@@ -37,6 +37,7 @@ brew install --cask utm
 brew install --cask bitwarden
 brew install --cask tunnelblick
 brew install --cask postico
+brew install --cask amethyst
 
 # install cask fonts
 brew tap homebrew/cask-fonts
