@@ -33,6 +33,7 @@ brew install --cask insomnia
 brew install --cask cyberduck
 brew install --cask spotify
 brew install --cask hiddenbar
+brew install --cask obs
 brew install --cask utm
 brew install --cask bitwarden
 brew install --cask tunnelblick
