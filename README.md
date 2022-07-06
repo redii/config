@@ -1,54 +1,10 @@
 # config
 
-Just a repository in which I can store all configuration files for my personal computers. The used software and dependencies can differ between Windows and macOS machines.
+A repository in which I store configuration files and scripts for my personal computers. Currently I am nearly only using macOS so the Windows config might be a bit outdated.
 
-## macOS
+## 🗂 Dot-Files
+One reason for this repository are my dot-files in my home directory. To setup these files just run the [setup_home.sh](https://github.com/redii/config/blob/main/macos/setup_home.sh) script. My dot-files can be found in [here](https://github.com/redii/config/blob/main/macos/home).
 
-### Configuration Files
+## 🛠 Installed software
 
-- .zshrc
-- .hyper.js
-- .skhdrc
-
-### Software
-
-#### Brew
-- Zsh + starship
-- Git
-- Nodejs + npm
-- deno
-- Python3 + pip
-- rust
-- Docker
-- Docker Compose
-- skhd
-- zip
-
-#### Brew Cask Software
-- Google Chrome
-- Firefox
-- Brackets
-- VSCode
-- Hyper.js
-- Google Drive
-- Adobe Creative Cloud
-- Docker Desktop
-- Insomnia
-- Cyberduck
-- Spotify
-- KeepingYouAwake
-- UTM
-- BitWarden
-
-#### Brew Cask Fonts
-- font-fira-code
-- font-jetbrains-mono
-
-#### Node Modules
-- pure-prompt
-- npx
-- nodemon
-- markdown-pdf
-- eslint
-- http-server
-- caprover
+The main reason for this repository was to save my installed programs to be able to simply reinstall them whenever I get new hardware. All programs I use regulary can be found in the [install_software.sh](https://github.com/redii/config/blob/main/macos/install_software.sh) file. Just run the script and everything needed gets installed.
