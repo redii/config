@@ -25,6 +25,7 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask brackets
 brew install --cask visual-studio-code
+brew install --cask jetbrains-toolbox
 brew install --cask warp
 brew install --cask hyper
 brew install --cask google-drive
