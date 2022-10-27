@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd home/
+cd ../dotfiles/
 for filename in $(find .); do
     if [ $filename != '.' ]
     then
