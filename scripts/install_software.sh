@@ -21,6 +21,7 @@ brew install --cask spotify
 brew install --cask google-drive
 brew install --cask hiddenbar
 brew install --cask aldente
+brew install --cask tailscale
 brew install --cask tunnelblick
 brew install --cask warp
 brew install --cask brackets
