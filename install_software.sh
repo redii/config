@@ -5,8 +5,8 @@
 
 # install cli software
 brew install git
+brew install macvim
 brew install nvm
-brew install python@3.10
 brew install docker
 brew install docker-compose
 brew install zip
@@ -24,9 +24,8 @@ brew install --cask aldente
 brew install --cask tailscale
 brew install --cask tunnelblick
 brew install --cask warp
-brew install --cask brackets
+brew install --cask macvim
 brew install --cask visual-studio-code
-brew install --cask jetbrains-toolbox
 brew install --cask insomnia
 brew install --cask docker
 brew install --cask cyberduck

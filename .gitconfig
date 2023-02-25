@@ -2,4 +2,4 @@
 	email = akmann.henry@gmail.com
 	name = akmann
 [core]
-	excludesfile = /Users/akmann/.gitignore_global
+	excludesfile = ~/.gitignore_global
