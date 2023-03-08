@@ -5,30 +5,30 @@
 
 # install cli software
 brew install git
-brew install macvim
-brew install nvm
 brew install docker
 brew install docker-compose
 brew install zip
 brew install grep
-brew install hugo
+brew install nvm                        # manage node versions
+brew install macvim                     # vim for mac
+brew install hugo                       # ssg cli
 
 # install cask software
-brew install --cask alfred
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask spotify
 brew install --cask google-drive
-brew install --cask hiddenbar
-brew install --cask aldente
-brew install --cask tailscale
-brew install --cask tunnelblick
-brew install --cask warp
-brew install --cask macvim
-brew install --cask visual-studio-code
-brew install --cask insomnia
 brew install --cask docker
-brew install --cask cyberduck
+brew install --cask visual-studio-code
+brew install --cask alfred              # advanced spotlight search
+brew install --cask hiddenbar           # hide icons from menubar
+brew install --cask aldente             # prevent overcharging
+brew install --cask tailscale           # networking made easy
+brew install --cask tunnelblick         # vpn client
+brew install --cask warp                # ai powered cli
+brew install --cask macvim              # gui vim for mac
+brew install --cask insomnia            # develop and test apis
+brew install --cask cyberduck           # ftp client
 
 # install cask fonts
 brew tap homebrew/cask-fonts
@@ -36,7 +36,7 @@ brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
 # install node using nvm
-nvm install --lts
+nvm install --lts                       # install latest node lts
 
 # install node modules
 npm install --global npx
@@ -44,3 +44,4 @@ npm install --global nodemon
 npm install --global markdown-pdf
 npm install --global eslint
 npm install --global caprover
+npm install --global netlify-cli
