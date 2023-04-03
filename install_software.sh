@@ -9,9 +9,10 @@ brew install docker
 brew install docker-compose
 brew install zip
 brew install grep
+brew install koekeishiya/formulae/yabai # tiling manager
 brew install nvm                        # manage node versions
 brew install macvim                     # vim for mac
-brew install hugo                       # ssg cli
+brew install hugo                       # hugo SSG cli
 
 # install cask software
 brew install --cask google-chrome
