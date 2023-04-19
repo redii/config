@@ -22,3 +22,4 @@ yabai -m config mouse_drop_action swap  # swap windows locations on center drag
 yabai -m rule --add  app="^System Settings$" manage=off
 yabai -m rule --add  app="^Calculator$" manage=off
 yabai -m rule --add  app="^Karabiner-Elements$" manage=off
+yabai -m rule --add  app="^Microsoft Remote Desktop$" manage=off

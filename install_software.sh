@@ -26,8 +26,10 @@ brew install --cask hiddenbar           # hide icons from menubar
 brew install --cask aldente             # prevent overcharging
 brew install --cask tailscale           # networking made easy
 brew install --cask tunnelblick         # vpn client
+brew install --cask mullvadvpn          # vpn mullvad
+brew install --cask vpn-by-google-one   # vpn by google
 brew install --cask warp                # ai powered cli
-brew install --cask macvim              # gui vim for mac
+brew install --cask macvim              # vim for mac
 brew install --cask insomnia            # develop and test apis
 brew install --cask cyberduck           # ftp client
 
