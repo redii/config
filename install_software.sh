@@ -13,6 +13,7 @@ brew install koekeishiya/formulae/yabai # tiling manager
 brew install nvm                        # manage node versions
 brew install macvim                     # vim for mac
 brew install hugo                       # hugo SSG cli
+brew install youtube-dl                 # download videos
 
 # install cask software
 brew install --cask google-chrome
