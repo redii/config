@@ -31,8 +31,10 @@ brew install --cask mullvadvpn          # vpn mullvad
 brew install --cask vpn-by-google-one   # vpn by google
 brew install --cask warp                # ai powered cli
 brew install --cask macvim              # vim for mac
+brew install --cask powershell          # powershell for mac
 brew install --cask insomnia            # develop and test apis
 brew install --cask cyberduck           # ftp client
+brew install --cask notunes             # prevent iTunes/Apple Music
 
 # install cask fonts
 brew tap homebrew/cask-fonts
