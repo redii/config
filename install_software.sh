@@ -9,7 +9,6 @@ brew install docker
 brew install docker-compose
 brew install zip
 brew install grep
-brew install koekeishiya/formulae/yabai # tiling manager
 brew install nvm                        # manage node versions
 brew install macvim                     # vim for mac
 brew install hugo                       # hugo SSG cli
@@ -22,8 +21,8 @@ brew install --cask spotify
 brew install --cask google-drive
 brew install --cask docker
 brew install --cask visual-studio-code
+brew install --cask obsidian            # markdown editor
 brew install --cask alfred              # advanced spotlight search
-brew install --cask hiddenbar           # hide icons from menubar
 brew install --cask aldente             # prevent overcharging
 brew install --cask tailscale           # networking made easy
 brew install --cask tunnelblick         # vpn client
