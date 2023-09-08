@@ -13,6 +13,8 @@ brew install nvm                        # manage node versions
 brew install macvim                     # vim for mac
 brew install hugo                       # hugo SSG cli
 brew install youtube-dl                 # download videos
+brew install macfuse                    # third-party filesystem support
+brew install rclone                     # mount and sync data 
 
 # install cask software
 brew install --cask google-chrome
