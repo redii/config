@@ -1,7 +1,7 @@
 /usr/local/bin/rclone mount idrive: /Users/akmann/idrive \
      --allow-other \
-     --dir-cache-time 96h \
-     --vfs-cache-max-age 48h \
+     --dir-cache-time 5m \
+     --vfs-cache-max-age 12h \
      --vfs-read-chunk-size 64M \
      --vfs-read-chunk-size-limit 2G \
      --vfs-cache-mode writes \
