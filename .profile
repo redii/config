@@ -1,5 +1,6 @@
 # define aliases
 alias ls="ls -lG"
+alias ll="ls -lG"
 alias la="ls -laG"
 
 # git config
