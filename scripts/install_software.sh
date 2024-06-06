@@ -6,10 +6,11 @@
 # install cli software
 brew install git
 brew install zsh
-brew install docker
-brew install docker-compose
 brew install zip
 brew install grep
+brew install docker
+brew install docker-compose
+brew install jesseduffield/lazydocker/lazydocker
 brew install pure                         # zsh prompt
 brew install nvm                          # manage node versions
 brew install hugo                         # hugo SSG cli
