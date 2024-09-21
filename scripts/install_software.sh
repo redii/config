@@ -17,7 +17,7 @@ brew install hugo                         # hugo SSG cli
 brew install youtube-dl                   # download videos
 brew install macfuse                      # third-party filesystem support
 brew install rclone                       # mount and sync data 
-brew install ffmpeg               			  # audio and video editing
+brew install ffmpeg               	  # audio and video editing
 
 # install cask software
 brew install --cask google-chrome
@@ -27,7 +27,7 @@ brew install --cask google-drive
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask iterm2
-brew install --cask alfred                # advanced spotlight search
+brew install --cask raycast               # advanced spotlight search
 brew install --cask bartender             # hide items from menubar
 brew install --cask unnaturalscrollwheels # fix mouse and trackpad scrolling
 brew install --cask command-x             # cut files in finder
