@@ -22,7 +22,6 @@ brew install ffmpeg               	      # audio and video editing
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask spotify
-brew install --cask google-drive
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask iterm2
@@ -52,4 +51,3 @@ npm install --global npx
 npm install --global nodemon
 npm install --global markdown-pdf
 npm install --global eslint
-npm install --global netlify-cli
