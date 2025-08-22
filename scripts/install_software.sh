@@ -10,7 +10,6 @@ brew install zip
 brew install grep
 brew install docker
 brew install docker-compose
-brew install jesseduffield/lazydocker/lazydocker
 brew install pure                         # zsh prompt
 brew install nvm                          # manage node versions
 brew install hugo                         # hugo SSG cli
@@ -20,8 +19,8 @@ brew install rclone                       # mount and sync data
 brew install ffmpeg               	  # audio and video editing
 
 # install cask software
-brew install --cask google-chrome
 brew install --cask firefox
+brew install --cask google-chrome
 brew install --cask spotify
 brew install --cask google-drive
 brew install --cask docker
@@ -34,8 +33,6 @@ brew install --cask command-x             # cut files in finder
 brew install --cask aldente               # prevent overcharging
 brew install --cask tailscale             # networking made easy
 brew install --cask tunnelblick           # vpn client
-brew install --cask mullvadvpn            # vpn by mullvad
-brew install --cask vpn-by-google-one     # vpn by google
 brew install --cask powershell            # powershell for mac
 brew install --cask cyberduck             # ftp client
 brew install --cask notunes               # prevent iTunes/Apple Music
