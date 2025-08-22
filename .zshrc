@@ -1,6 +1,6 @@
 # activate pure prompt
-autoload -U promptinit; promptinit
-prompt pure
+#autoload -U promptinit; promptinit
+#prompt pure
 
 # define aliases
 alias ls="ls -lG"
@@ -14,3 +14,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # setup PATH variable
 export PATH="$(brew --prefix grep)/libexec/gnubin:$PATH" # https://stackoverflow.com/questions/33231370/installed-gnu-grep-on-osx-but-cant-use
+export PATH=$PATH:/opt/homebrew/bin
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
