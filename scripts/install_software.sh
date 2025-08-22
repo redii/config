@@ -16,7 +16,7 @@ brew install hugo                         # hugo SSG cli
 brew install youtube-dl                   # download videos
 brew install macfuse                      # third-party filesystem support
 brew install rclone                       # mount and sync data 
-brew install ffmpeg               	  # audio and video editing
+brew install ffmpeg               	      # audio and video editing
 
 # install cask software
 brew install --cask firefox
@@ -45,7 +45,7 @@ brew install --cask font-jetbrains-mono
 brew install --cask poppins
 
 # install node using nvm
-nvm install --lts                       # install latest node lts
+nvm install --lts                         # install latest node lts
 
 # install node modules
 npm install --global npx
