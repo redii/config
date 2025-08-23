@@ -1,3 +1,3 @@
 # 👨‍💻 config
 
-A repository for my **dotfiles** and **scripts**.
+A repository for dotfiles, configs  and scripts.
