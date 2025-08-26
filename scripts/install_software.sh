@@ -38,6 +38,7 @@ brew install --cask powershell            # powershell for mac
 brew install --cask cyberduck             # ftp client
 brew install --cask notunes               # prevent iTunes/Apple Music
 brew install --cask bruno                 # http/api client
+brew install --cask obs                   # open broadcaster software
 
 # install cask fonts
 brew tap homebrew/cask-fonts
