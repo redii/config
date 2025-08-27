@@ -29,6 +29,7 @@ brew install --cask iterm2
 brew install --cask proton-drive
 brew install --cask raycast               # advanced spotlight search
 brew install --cask bartender             # hide items from menubar
+brew install --cask maccy                 # clipboard manager
 brew install --cask unnaturalscrollwheels # fix mouse and trackpad scrolling
 brew install --cask command-x             # cut files in finder
 brew install --cask aldente               # prevent overcharging
