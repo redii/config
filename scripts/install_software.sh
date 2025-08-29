@@ -26,6 +26,7 @@ brew install --cask spotify
 brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask iterm2
+brew install --cask figma
 brew install --cask proton-drive
 brew install --cask raycast               # advanced spotlight search
 brew install --cask bartender             # hide items from menubar
