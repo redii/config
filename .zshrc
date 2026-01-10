@@ -18,3 +18,6 @@ export NVM_DIR="$HOME/.nvm"
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
+
+# activate aws cli autoprompt
+export AWS_CLI_AUTO_PROMPT="on-partial"
