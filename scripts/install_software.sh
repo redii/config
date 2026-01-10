@@ -29,6 +29,7 @@ brew install --cask iterm2
 brew install --cask figma
 brew install --cask proton-drive
 brew install --cask discord
+brew install --cask mountain-duck
 brew install --cask raycast               # advanced spotlight search
 brew install --cask bartender             # hide items from menubar
 brew install --cask maccy                 # clipboard manager
@@ -44,6 +45,7 @@ brew install --cask bruno                 # http/api client
 brew install --cask obs                   # open broadcaster software
 brew install --cask keka                  # archiving tool
 brew install --cask sabnzbd               # usenet downloader
+brew install --cask bambu-studio          # bambulab 3d studio
 
 # install cask fonts
 brew tap homebrew/cask-fonts
