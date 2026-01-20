@@ -5,6 +5,10 @@ alias la="ls -laG"
 alias d="docker"
 alias dc="docker compose"
 
+# SSH quick connect
+alias qwe="ssh henry@garados.de"
+alias myo="ssh root@app.makeyouroffice.de"
+
 # setup PATH variable
 export PATH="$(brew --prefix grep)/libexec/gnubin:$PATH" # https://stackoverflow.com/questions/33231370/installed-gnu-grep-on-osx-but-cant-use
 export PATH=$PATH:/opt/homebrew/bin
