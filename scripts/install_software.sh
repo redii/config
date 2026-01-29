@@ -21,6 +21,7 @@ brew install ffmpeg               	      # audio and video editing
 # install cask software
 brew install --cask firefox
 brew install --cask firefox@developer-edition
+brew install --cask bitwarden
 brew install --cask google-chrome
 brew install --cask spotify
 brew install --cask mullvad-vpn

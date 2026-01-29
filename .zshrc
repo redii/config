@@ -5,7 +5,8 @@ alias la="ls -laG"
 alias d="docker"
 alias dc="docker compose"
 
-# SSH quick connect
+# SSH settings
+export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
 alias qwe="ssh henry@garados.de"
 alias myo="ssh root@app.makeyouroffice.de"
 

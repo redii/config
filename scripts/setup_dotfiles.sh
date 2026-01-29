@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ln -s $PWD/.zshrc ~
-ln -s $PWD/.ssh ~
 ln -s $PWD/.gitconfig ~
 ln -s $PWD/.gitignore_global ~
 ln -s $PWD/.vimrc ~
