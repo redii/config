@@ -23,5 +23,8 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
+# activate Homebrew autoupdate once a day
+export HOMEBREW_AUTO_UPDATE_SECS=86400
+
 # activate aws cli autoprompt
 export AWS_CLI_AUTO_PROMPT="on-partial"
