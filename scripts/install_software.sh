@@ -29,18 +29,15 @@ brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask figma
-brew install --cask proton-drive
 brew install --cask discord
-brew install --cask mountain-duck
 brew install --cask raycast               # advanced spotlight search
-brew install --cask bartender             # hide items from menubar
+brew install --cask hiddenbar             # hide items from menubar
 brew install --cask maccy                 # clipboard manager
 brew install --cask unnaturalscrollwheels # fix mouse and trackpad scrolling
 brew install --cask command-x             # cut files in finder
 brew install --cask aldente               # prevent overcharging
 brew install --cask tailscale             # networking made easy
 brew install --cask tunnelblick           # vpn client
-brew install --cask powershell            # powershell for mac
 brew install --cask cyberduck             # ftp client
 brew install --cask notunes               # prevent iTunes/Apple Music
 brew install --cask bruno                 # http/api client

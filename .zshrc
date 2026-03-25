@@ -9,10 +9,12 @@ alias dc="docker compose"
 export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
 alias qwe="ssh henry@garados.de"
 alias myo="ssh root@app.makeyouroffice.de"
+alias tunnel_molt="ssh -N -L 18789:127.0.0.1:18789 root@moltbot-01.hanova.tech
+-i ~/.ssh/id_ed25519-ht"
 
 # setup PATH variable
-export PATH="$(brew --prefix grep)/libexec/gnubin:$PATH" # https://stackoverflow.com/questions/33231370/installed-gnu-grep-on-osx-but-cant-use
-export PATH=$PATH:/opt/homebrew/bin
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/opt/grep/libexec/gnubin" # add grep to PATH
 
 # activate nvm (node version manager)
 export NVM_DIR="$HOME/.nvm"
