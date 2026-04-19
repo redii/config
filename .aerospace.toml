@@ -1,0 +1,137 @@
+# =============================================================================
+# General
+# =============================================================================
+
+start-at-login = true
+
+# Mouse follows focus — cursor jumps to the focused window
+# so you always know which window is active
+on-focus-changed = ['move-mouse window-lazy-center']
+
+# Automatically flatten nested containers to avoid confusing deep layouts
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+default-root-container-orientation = 'auto'
+default-root-container-layout = 'tiles'
+
+# Gap between tiled windows (pixels)
+[gaps]
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 2
+outer.right = 10
+
+# =============================================================================
+# Key Bindings — Main Mode
+# =============================================================================
+# alt (Option) is the modifier for everything.
+# alt+; replaces alt+l for focus-right, since alt+l = @ on German keyboard.
+
+[mode.main.binding]
+
+# ----- Focus -----
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-semicolon = 'focus right'
+
+# ----- Move window -----
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-semicolon = 'move right'
+
+# ----- Layout -----
+# Toggle between tiling and accordion layout
+alt-comma = 'layout tiles accordion'
+
+# Toggle floating (untiled, free-moving) vs tiled
+alt-shift-space = 'layout floating tiling'
+
+# Fullscreen (window takes all space but stays tiled)
+alt-f = 'fullscreen'
+
+# Float all windows on the current workspace
+alt-shift-f = ['exec-and-forget aerospace list-windows --workspace focused --format %{window-id} | xargs -I{} aerospace layout --window-id {} floating']
+
+
+# Reload config
+alt-shift-r = 'reload-config'
+
+# Enter resize mode (Escape to exit)
+alt-r = 'mode resize'
+
+# ----- Workspaces -----
+# alt + key = switch to workspace
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-b = 'workspace B'    # Browser
+alt-t = 'workspace T'    # Terminal
+alt-e = 'workspace E'    # Editor
+alt-s = 'workspace C'    # Chat
+alt-d = 'workspace D'    # Dev tools
+alt-w = ['workspace W', 'layout accordion horizontal']    # Work
+
+# alt+shift + key = move focused window to workspace
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-b = 'move-node-to-workspace B'
+alt-shift-t = 'move-node-to-workspace T'
+alt-shift-e = 'move-node-to-workspace E'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-d = 'move-node-to-workspace D'
+alt-shift-w = 'move-node-to-workspace W'
+
+# =============================================================================
+# Resize Mode
+# =============================================================================
+# After alt+r, use h/j/k/l to resize. Escape/Enter to exit.
+
+[mode.resize.binding]
+left = 'resize width -50'
+down = 'resize height +50'
+up = 'resize height -50'
+right = 'resize width +50'
+enter = 'mode main'
+esc = 'mode main'
+
+# =============================================================================
+# Window Rules — apps that should float instead of tile
+# =============================================================================
+
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.calculator'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefoxdeveloperedition'
+run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = 'move-node-to-workspace W'

@@ -41,6 +41,7 @@ brew install --cask cyberduck             # ftp client
 brew install --cask notunes               # prevent iTunes/Apple Music
 brew install --cask bruno                 # http/api client
 brew install --cask obs                   # open broadcaster software
+brew install --cask karabiner-elements    # keyboard remapping
 brew install --cask keka                  # archiving tool
 brew install --cask sabnzbd               # usenet downloader
 brew install --cask bambu-studio          # bambulab 3d studio
