@@ -69,10 +69,7 @@ alt-r = 'mode resize'
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
-alt-b = 'workspace B'    # Browser
-alt-t = 'workspace T'    # Terminal
-alt-e = 'workspace E'    # Editor
-alt-s = 'workspace C'    # Chat
+alt-4 = 'workspace 4'
 alt-d = 'workspace D'    # Dev tools
 alt-w = ['workspace W', 'layout accordion horizontal']    # Work
 
@@ -80,10 +77,7 @@ alt-w = ['workspace W', 'layout accordion horizontal']    # Work
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
-alt-shift-b = 'move-node-to-workspace B'
-alt-shift-t = 'move-node-to-workspace T'
-alt-shift-e = 'move-node-to-workspace E'
-alt-shift-c = 'move-node-to-workspace C'
+alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-d = 'move-node-to-workspace D'
 alt-shift-w = 'move-node-to-workspace W'
 
@@ -117,20 +111,12 @@ if.app-id = 'com.apple.calculator'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
-run = 'move-node-to-workspace T'
-
-[[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace B'
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefoxdeveloperedition'
 run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
