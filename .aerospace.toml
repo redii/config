@@ -28,7 +28,10 @@ outer.right = 10
 # Key Bindings — Main Mode
 # =============================================================================
 # alt (Option) is the modifier for everything.
-# alt+; replaces alt+l for focus-right, since alt+l = @ on German keyboard.
+# alt+ö replaces alt+l for focus-right, since alt+l = @ on German keyboard.
+
+[key-mapping.key-notation-to-key-code]
+o-umlaut = 'semicolon'
 
 [mode.main.binding]
 
@@ -36,13 +39,13 @@ outer.right = 10
 alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
-alt-semicolon = 'focus right'
+alt-o-umlaut = 'focus right'
 
 # ----- Move window -----
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
 alt-shift-k = 'move up'
-alt-shift-semicolon = 'move right'
+alt-shift-o-umlaut = 'move right'
 
 # ----- Layout -----
 # Toggle between tiling and accordion layout
