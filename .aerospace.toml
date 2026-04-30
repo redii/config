@@ -124,3 +124,7 @@ run = 'move-node-to-workspace W'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.window-title-regex-substring = 'Bitwarden'
+run = 'layout floating'
