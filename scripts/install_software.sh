@@ -8,7 +8,7 @@ brew install git
 brew install zsh
 brew install zip
 brew install grep
-brew install docker
+brew install podman
 brew install docker-compose
 brew install gh                           # Github CLI
 brew install pure                         # zsh prompt
@@ -25,10 +25,9 @@ brew install --cask firefox@developer-edition
 brew install --cask bitwarden
 brew install --cask google-chrome
 brew install --cask spotify
-brew install --cask mullvad-vpn
-brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask iterm2
+brew install --cask podman-desktop
 brew install --cask figma
 brew install --cask discord
 brew install --cask raycast               # advanced spotlight search

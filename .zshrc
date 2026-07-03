@@ -1,20 +1,19 @@
 # define aliases
 alias ls="ls -lG"
-alias ll="ls -lG"
 alias la="ls -laG"
-alias d="docker"
-alias dc="docker compose"
+alias docker="podman"
 
 # SSH settings
 export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
 alias qwe="ssh henry@garados.de"
 alias myo="ssh root@app.makeyouroffice.de"
-alias tunnel_molt="ssh -N -L 18789:127.0.0.1:18789 root@moltbot-01.hanova.tech
--i ~/.ssh/id_ed25519-ht"
 
 # setup PATH variable
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/opt/homebrew/opt/grep/libexec/gnubin" # add grep to PATH
+
+# setup podman/docker compatibility
+export DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"
 
 # activate nvm (node version manager)
 export NVM_DIR="$HOME/.nvm"
