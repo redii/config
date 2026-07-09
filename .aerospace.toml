@@ -15,13 +15,19 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 default-root-container-orientation = 'auto'
 default-root-container-layout = 'tiles'
 
+# Borders (FelixKratz)
+# github.com/FelixKratz/JankyBorders
+after-startup-command = [
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+]
+
 # Gap between tiled windows (pixels)
 [gaps]
-inner.horizontal = 10
-inner.vertical = 10
-outer.left = 10
-outer.bottom = 10
+inner.horizontal = 8
+inner.vertical = 8
 outer.top = 2
+outer.bottom = 10
+outer.left = 10
 outer.right = 10
 
 # =============================================================================
@@ -35,19 +41,19 @@ oumlaut = 'semicolon'
 
 [mode.main.binding]
 
-# ----- Focus -----
+# Focus
 alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
 alt-oumlaut = 'focus right'
 
-# ----- Move window -----
+# Move window
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
 alt-shift-k = 'move up'
 alt-shift-oumlaut = 'move right'
 
-# ----- Layout -----
+# Layout
 # Toggle between tiling and accordion layout
 alt-comma = 'layout tiles accordion'
 
@@ -67,7 +73,9 @@ alt-shift-r = 'reload-config'
 # Enter resize mode (Escape to exit)
 alt-r = 'mode resize'
 
-# ----- Workspaces -----
+# =============================================================================
+# Workspaces
+# =============================================================================
 # alt + key = switch to workspace
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
@@ -87,9 +95,13 @@ alt-shift-w = 'move-node-to-workspace W'
 # =============================================================================
 # Resize Mode
 # =============================================================================
-# After alt+r, use h/j/k/l to resize. Escape/Enter to exit.
+# After alt+r, use h/j/k/ö (or arrow keys) to resize. Escape/Enter to exit.
 
 [mode.resize.binding]
+h = 'resize width -50'
+j = 'resize height +50'
+k = 'resize height -50'
+oumlaut = 'resize width +50'
 left = 'resize width -50'
 down = 'resize height +50'
 up = 'resize height -50'
@@ -119,7 +131,7 @@ run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
-run = 'move-node-to-workspace W'
+run = ['layout floating', 'move-node-to-workspace W']
 
 [[on-window-detected]]
 if.window-title-regex-substring = 'Bitwarden'
