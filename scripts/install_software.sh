@@ -3,6 +3,8 @@
 # install homebrew package manager
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# setup brew taps
+
 # install cli software
 brew install git
 brew install zsh
@@ -13,7 +15,6 @@ brew install docker-compose
 brew install gh                           # Github CLI
 brew install pure                         # zsh prompt
 brew install nvm                          # node version manager
-brew install hugo                         # hugo SSG cli
 brew install youtube-dl                   # download videos
 brew install macfuse                      # third-party filesystem support
 brew install rclone                       # mount and sync data 
@@ -51,6 +52,10 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 brew install --cask poppins
+
+# install custom from custom taps
+brew tap FelixKratz/formulae
+brew install borders                      # border for active window
 
 # install node using nvm
 export NVM_DIR="$HOME/.nvm"
