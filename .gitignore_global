@@ -1,2 +1,14 @@
+# macOS
 .DS_Store
+._*
+
+# node
 node_modules
+
+# secrets & local env files
+.env
+.env.local
+.env.*.local
+
+# editor / IDE local state
+.idea/
