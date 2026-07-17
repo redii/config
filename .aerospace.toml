@@ -132,5 +132,9 @@ if.app-id = 'com.microsoft.Outlook'
 run = ['layout floating', 'move-node-to-workspace W']
 
 [[on-window-detected]]
+if.app-id = 'com.apple.reminders'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.window-title-regex-substring = 'Bitwarden'
 run = 'layout floating'
