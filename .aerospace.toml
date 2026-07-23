@@ -138,3 +138,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.window-title-regex-substring = 'Bitwarden'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.wireguard.macos'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'io.tldv.desktop'
+run = 'layout floating'
