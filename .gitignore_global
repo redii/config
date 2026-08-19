@@ -12,3 +12,5 @@ node_modules
 
 # editor / IDE local state
 .idea/
+
+**/.claude/settings.local.json
