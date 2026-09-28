@@ -61,8 +61,8 @@ alt-shift-space = 'layout floating tiling'
 # Fullscreen (window takes all space but stays tiled)
 alt-f = 'fullscreen'
 
-# Float all windows on the current workspace
-alt-shift-f = ['exec-and-forget aerospace list-windows --workspace focused --format %{window-id} | xargs -I{} aerospace layout --window-id {} floating']
+# Toggle all windows on the current workspace: float all if any is tiled, otherwise tile all
+alt-shift-f = ['exec-and-forget if aerospace list-windows --workspace focused --format %{window-layout} | grep -qv floating; then t=floating; else t=tiling; fi; aerospace list-windows --workspace focused --format %{window-id} | xargs -I{} aerospace layout --window-id {} $t']
 
 
 # Reload config
