@@ -52,13 +52,16 @@ alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
 # Layout
+# All windows float by default (see Window Rules); AeroSpace is mainly used for
+# workspaces. Focus/move/resize/accordion only apply to tiled windows.
 # Toggle between tiling and accordion layout
 alt-comma = 'layout tiles accordion'
 
 # Toggle floating (untiled, free-moving) vs tiled
 alt-shift-space = 'layout floating tiling'
 
-# Fullscreen (window takes all space but stays tiled)
+# Maximize the focused window (floating: resized to fill the screen with gaps;
+# tiled: fullscreen toggle). One-way for floating windows: alt-f again does not restore.
 alt-f = 'fullscreen'
 
 # Toggle all windows on the current workspace: float all if any is tiled, otherwise tile all
@@ -108,123 +111,19 @@ enter = 'mode main'
 esc = 'mode main'
 
 # =============================================================================
-# Window Rules — apps that should float instead of tile
+# Window Rules
 # =============================================================================
-
-[[on-window-detected]]
-if.app-id = 'com.apple.systempreferences'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.calculator'
-run = 'layout floating'
+# Only the first matching rule runs, so app-specific rules must include
+# 'layout floating' themselves and the catch-all must stay last.
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace D'
+run = ['layout floating', 'move-node-to-workspace D']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
 run = ['layout floating', 'move-node-to-workspace W']
 
+# Everything else floats (free move/overlap, no auto-tiling)
 [[on-window-detected]]
-if.app-id = 'com.apple.reminders'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Notes'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.MobileSMS'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.FaceTime'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.AddressBook'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.weather'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.clock'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Home'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Passwords'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.ActivityMonitor'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Dictionary'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Preview'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.QuickTimePlayerX'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.AppStore'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Stickies'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.VoiceMemos'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Music'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Photos'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.shortcuts'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.window-title-regex-substring = 'Bitwarden'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.wireguard.macos'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'io.tldv.desktop'
-run = 'layout floating'
-
-# Applies per window, so meeting windows and screen-share popouts float too,
-# not just the main window
-[[on-window-detected]]
-if.app-id = 'com.microsoft.teams2'
 run = 'layout floating'
