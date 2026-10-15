@@ -60,9 +60,9 @@ alt-comma = 'layout tiles accordion'
 # Toggle floating (untiled, free-moving) vs tiled
 alt-shift-space = 'layout floating tiling'
 
-# Maximize the focused window (floating: resized to fill the screen with gaps;
-# tiled: fullscreen toggle). One-way for floating windows: alt-f again does not restore.
-alt-f = 'fullscreen'
+# Toggle maximize: floating windows fill the screen (with gaps), alt-f again restores
+# the previous size/position; tiled windows toggle fullscreen
+alt-f = 'exec-and-forget ~/dev/config/aerospace/toggle-maximize.sh'
 
 # Toggle all windows on the current workspace: float all if any is tiled, otherwise tile all
 alt-shift-f = ['exec-and-forget if aerospace list-windows --workspace focused --format %{window-layout} | grep -qv floating; then t=floating; else t=tiling; fi; aerospace list-windows --workspace focused --format %{window-id} | xargs -I{} aerospace layout --window-id {} $t']

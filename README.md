@@ -17,6 +17,7 @@ A repository for dotfiles, configs and scripts.
 
 ## AeroSpace
 
-Tiling window manager config (`.aerospace.toml`) with vim-style hjkl bindings,
-workspaces on `alt+1-4/d/w` and [JankyBorders](https://github.com/FelixKratz/JankyBorders)
+Window manager config (`.aerospace.toml`), used mainly for workspaces: all windows
+float by default, workspaces on `alt+1-4/d/w`, `alt+f` toggles maximize
+(`aerospace/toggle-maximize.sh`), vim-style hjkl bindings for tiled windows and [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 highlighting the focused window.
