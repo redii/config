@@ -4,10 +4,6 @@
 
 start-at-login = true
 
-# Mouse follows focus — cursor jumps to the focused window
-# so you always know which window is active
-on-focus-changed = ['move-mouse window-lazy-center']
-
 # Automatically flatten nested containers to avoid confusing deep layouts
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
